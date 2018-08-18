@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>XSS Challenge</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="wrapper-div">
+  <h1>XSS Challenge</h1>
+  <div id="alert-box">
+    <label class="input" for="input">Input XSS Code</label>
+    <br>
+    <br>
+    <input type="text" id="input" class="input">
+    <br><br>
+    <br>
+    <div id="confirm">
+      <button id="confirm-button">OK</button>
+    </div>
+  </div>
+  <br>
+
+  <div id="radioButtons">
+    <label for="chal-1">#1</label>
+    <input type="radio" name="challenge" id="chal-1">&nbsp
+    <label for="chal-2">#2</label>
+    <input type="radio" name="challenge" id="chal-2">&nbsp
+    <label for="chal-3">#3</label>
+    <input type="radio" name="challenge" id="chal-3">
+  </div>
+
+  <h4 id="code-title">Please select a challenge number and attempt to inject a JavaScript alert.</h4>
+  <code id="code"></code>
+  <br>
+  <h4 id="rules"></h4>
+  <p id="ruleLine"></p>
+  <div id="output"></>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
